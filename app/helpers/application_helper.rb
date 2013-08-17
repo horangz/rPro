@@ -14,6 +14,7 @@ module ApplicationHelper
         if number2 > number1
             number1 = number1 ^ number2
             number2 = number1 ^ number2
+            number1 = number1 ^ number2
         end
         rest = number1 % number2
         if rest == 0
