@@ -22,4 +22,8 @@ module ApplicationHelper
         end
         least_common_multiple(number2, rest)
     end
+    
+    def string_shuffle(string)
+        string.split("").shuffle.join
+    end
 end

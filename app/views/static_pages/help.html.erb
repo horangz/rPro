@@ -2,3 +2,26 @@
 
 <h1>rPro help</h1>
 <p>Find me in app/views/static_pages/help.html.erb</p>
+<%= string_shuffle("test") %>
+<br />
+<%
+person1 = { first_name: "dzeman", last_name: "horangz" }
+person2 = { first_name: "svetlyak", last_name: "scubby" }
+person3 = { first_name: "svetman", last_name: "scungz" }
+
+params = { father: person1, mother: person2, child: person3 }
+%>
+<%= params[:father][:first_name] %>
+<%
+begin
+	nil.uppercase
+rescue Exception => ex
+	
+end
+%>
+<% obj = Object.new
+copy = obj.clone
+%>
+<%= copy.object_id%>
+<%= obj.object_id%>
+
